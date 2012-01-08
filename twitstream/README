@@ -1,0 +1,1 @@
+Twitstream is a very basic twitter client listening to the twitter streaming API, using libcurl, json_spirit and boost.

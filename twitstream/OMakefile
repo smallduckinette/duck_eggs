@@ -1,0 +1,6 @@
+FILES[] = 
+	twitstream
+
+CXXProgram(../bin/twitstream, $(FILES))
+
+.DEFAULT: ../bin/twitstream$(EXE)

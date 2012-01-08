@@ -1,0 +1,9 @@
+LDFLAGS += -lcurl -lboost_program_options
+
+CXXFLAGS += -Wall -Werror -ansi -std=gnu++0x -ggdb -I.. 
+
+.SUBDIRS: twitstream
+
+.PHONY: clean
+clean:
+	rm $(filter-proper-targets $(ls R, .))
