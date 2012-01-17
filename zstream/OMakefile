@@ -1,0 +1,7 @@
+LDFLAGS += -lz
+
+CXXProgram(../bin/zin, zin zstream)
+CXXProgram(../bin/zout, zout zstream)
+
+.DEFAULT: ../bin/zin$(EXE) ../bin/zout$(EXE)
+
