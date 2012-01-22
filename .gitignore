@@ -3,3 +3,6 @@
 .omakedb.lock
 *.omc
 *.o
+*.cmi
+*.cmo
+*.cmx

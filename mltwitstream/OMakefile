@@ -1,0 +1,15 @@
+FILES[] =
+	twitstream
+
+USE_OCAMLFIND = true
+BYTE_ENABLED = true
+NATIVE_ENABLED = true
+
+OCAMLPACKS[] =
+	curl
+	yojson
+
+OCamlProgram(../bin/mltwitstream, $(FILES))
+
+.DEFAULT: $(if $(BYTE_ENABLED), ../bin/mltwitstream.run)
+.DEFAULT: $(if $(NATIVE_ENABLED), ../bin/mltwitstream.opt)
