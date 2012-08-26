@@ -1,0 +1,1 @@
+mlgl is a demo of a scene graph in OCaml using the lablgl library. It expects to be run in the top-level directory to find the earth_day.jpg texture file.

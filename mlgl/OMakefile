@@ -1,0 +1,35 @@
+FILES[] =
+   Bound
+   Collision
+   Frustum
+   Index
+   Math
+   MlGl
+   MlGlG
+   MlGlShapes
+   MlGlStyle
+   MlGlTexture
+   MlGlTrans
+   MlGlUtils
+   Math
+   Main
+   Noise
+   Renderer
+   Sphere
+   Tensor
+   Terrain
+
+USE_OCAMLFIND = true
+BYTE_ENABLED = true
+NATIVE_ENABLED = true
+
+OCAMLPACKS[] =
+   bigarray
+   lablgl
+   sdl
+   sdl.sdlimage
+
+OCamlProgram(../bin/mlgl, $(FILES))
+
+.DEFAULT: $(if $(BYTE_ENABLED), ../bin/mlgl.run)
+.DEFAULT: $(if $(NATIVE_ENABLED), ../bin/mlgl.opt)
